@@ -5,6 +5,7 @@ import About1 from '../assets/About1.png';
 import About2 from '../assets/About2.png';
 import AboutHero from '../assets/AboutHero.png';
 import Founder from '../assets/Founder.jpg';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const missionStatement = `AtmaNamaste
@@ -60,7 +61,9 @@ for millions—uniting generations in devotion, discovery, and divine experience
             <p className="text-whitetext-sm sm:text-base md:text-lg leading-relaxed mb-6">
               {missionStatement}
             </p>
-            <button className="btn btn-primary">Get in Touch</button>
+            <Link to="/contact">
+              <button className="btn btn-primary">Get in Touch</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -73,7 +76,9 @@ for millions—uniting generations in devotion, discovery, and divine experience
             <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed mb-6">
               {visionStatement}
             </p>
-            <button className="btn btn-primary">Get in Touch</button>
+            <Link to="/contact">
+              <button className="btn btn-primary">Get in Touch</button>
+            </Link>
           </div>
           <img
             src={About2}

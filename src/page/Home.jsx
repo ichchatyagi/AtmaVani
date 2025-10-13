@@ -27,8 +27,8 @@ const Home = () => {
           <div>
             <div className="text-3xl sm:text-4xl lg:text-5xl font-bold space-y-3">
               <TypingAnimation>ATMAVANI TV</TypingAnimation>
-              <TypingAnimation>Welcome To The World Of</TypingAnimation>
-              <TypingAnimation>4K / HD / SD Devotional TV Channel</TypingAnimation>
+              <TypingAnimation>    Welcome To The World Of</TypingAnimation>
+              <TypingAnimation>      4K / HD / SD Devotional TV Channel</TypingAnimation>
             </div>
           </div>
         </div>
