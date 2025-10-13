@@ -12,8 +12,9 @@ const Navbar = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to='/contact'>Contact</Link></li>
-          <li><Link to='/fpc'>FPC</Link></li>
-          <li><Link to='/enquiry'>Get in touch</Link></li>
+          <li><Link to='/fpc'>TV Guide</Link></li>
+          <li><Link to='/livetv'>Live TV</Link></li>
+          <li><a href="https://www.youtube.com/@AtmavaniTV">Videos</a></li>
         </ul>
         <div class="navbar-end">
           <div className='flex flex-row gap-4'>

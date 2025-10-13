@@ -1,16 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
-import Car1 from '../assets/Carousel/CAR01.jpg'
-import Car2 from '../assets/Carousel/CAR02.jpg'
-import Car10 from '../assets/Carousel/CAR21.jpg'
-import Car11 from '../assets/Carousel/CAR35.jpg'
-import Car12 from '../assets/Carousel/CAR53.jpg'
+import Car1 from '../assets/Program/ComingSoon/C1.jpeg'
+import Car2 from '../assets/Program/ComingSoon/C2.jpeg'
+import Car3 from '../assets/Program/ComingSoon/C3.jpeg'
+import Car4 from '../assets/Program/ComingSoon/C4.jpeg'
+import Car5 from '../assets/Program/ComingSoon/C5.jpeg'
+import Car6 from '../assets/Program/ComingSoon/C6.jpeg'
+import Car7 from '../assets/Program/ComingSoon/C7.jpeg'
+import Car8 from '../assets/Program/ComingSoon/C8.jpeg'
+import Car9 from '../assets/Program/ComingSoon/C9.jpeg'
+import Car10 from '../assets/Program/ComingSoon/C10.jpeg'
+import Car11 from '../assets/Program/ComingSoon/C11.jpeg'
+import Car12 from '../assets/Program/ComingSoon/C12.jpeg'
 
-export default function CircularDemo() {
+export default function HomeCarouselComing() {
 
     const images = [
         {image: Car1},
         {image: Car2},
+        {image: Car3},
+        {image: Car4},
+        {image: Car5},
+        {image: Car6},
+        {image: Car7},
+        {image: Car8},
+        {image: Car9},
         {image: Car10},
         {image: Car11},
         {image: Car12},

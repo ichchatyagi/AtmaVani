@@ -2,11 +2,17 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import HomeCarousel from '../components/HomeCarousel'
+import HomeCarouselComing from '../components/HomeCarouselComing'
 import BGImg from '../assets/BGImg.png'
 import Logo from '../assets/Logo.png'
 import { TypingAnimation } from "../components/ui/typing-animation";
 import JioTV from '../assets/JioTV.jpg'
 import YuppTV from '../assets/YuppTV.png'
+import TV1 from '../assets/TV1.png'
+import TV2 from '../assets/TV2.jpeg'
+import TV3 from '../assets/TV3.jpeg'
+import TV4 from '../assets/TV4.jpeg'
+
 
 const Home = () => {
 
@@ -41,7 +47,7 @@ const Home = () => {
         <h1 className='text-5xl font-bold text-left my-8'>
           Coming Soon...
         </h1>
-        <HomeCarousel />
+        <HomeCarouselComing />
       </div>
       <div className='grid grid-cols-2 x-16 my-8'>
         <div className='mx-auto'>
@@ -50,8 +56,15 @@ const Home = () => {
         </h1>
         <h2 className='text-2xl font-bold text-left my-8'>STREAMING ON</h2>
         <div className='flex flex-row gap-8 my-8'>
-          <img className='w-40 rounded-3xl' src={JioTV} alt="" />
-          <img src={YuppTV} alt="" className='w-40 rounded-3xl'/>
+          <img className='w-32 rounded-3xl' src={TV1} alt="" />
+          <img className='w-32 rounded-3xl' src={TV2} alt="" />
+          <img className='w-32 rounded-3xl' src={TV3} alt="" />
+          <img className='w-32 rounded-3xl' src={TV4} alt="" />
+        </div>
+        <h2 className='text-2xl font-bold text-left my-8'>COMING SOON ON</h2>
+        <div className='flex flex-row gap-8 my-8'>
+          <img className='w-32 rounded-3xl' src={JioTV} alt="" />
+          <img src={YuppTV} alt="" className='w-32 rounded-3xl'/>
         </div>
         </div>
         <img src={Logo} alt="" />
