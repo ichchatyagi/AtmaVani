@@ -34,8 +34,8 @@ for millions—uniting generations in devotion, discovery, and divine experience
         className="hero min-h-[70vh] bg-cover bg-center flex items-center justify-center text-center px-4"
         style={{ backgroundImage: `url(${AboutHero})` }}
       >
-        <div className="hero-overlay bg-black/60 absolute inset-0"></div>
-        <div className="relative z-10 max-w-2xl bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-lg text-white">
+        <div className="absolute inset-0"></div>
+        <div className="relative z-10 max-w-2xl bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-lg text-black">
           <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl font-bold">About Us</h1>
           <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             Welcome to <strong>Atmavani TV</strong> — India’s leading devotional and spiritual
@@ -56,8 +56,8 @@ for millions—uniting generations in devotion, discovery, and divine experience
             className="w-full sm:w-2/3 lg:w-1/2 rounded-lg shadow-2xl object-cover"
           />
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Our Mission</h2>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Our Mission</h2>
+            <p className="text-whitetext-sm sm:text-base md:text-lg leading-relaxed mb-6">
               {missionStatement}
             </p>
             <button className="btn btn-primary">Get in Touch</button>
@@ -69,8 +69,8 @@ for millions—uniting generations in devotion, discovery, and divine experience
       <section className="bg-base-200 py-10 px-4 sm:px-8">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Our Vision</h2>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Our Vision</h2>
+            <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed mb-6">
               {visionStatement}
             </p>
             <button className="btn btn-primary">Get in Touch</button>
@@ -88,24 +88,24 @@ for millions—uniting generations in devotion, discovery, and divine experience
         <div className="flex flex-col lg:flex-row items-center gap-10">
           {/* Founder Text */}
           <div className="lg:w-1/2">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">About Our Founder</h2>
-            <p className="font-semibold text-lg text-gray-700">Shubbh Malhotra</p>
-            <p className="italic text-gray-600 mb-4">Founder & CEO, Shubbh Media Group</p>
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">About Our Founder</h2>
+            <p className="font-semibold text-lg text-white">Shubbh Malhotra</p>
+            <p className="italic text-white mb-4">Founder & CEO, Shubbh Media Group</p>
+            <p className="text-white text-sm sm:text-base leading-relaxed mb-4">
               Shubbh Malhotra is a visionary leader whose multifaceted journey spans fashion, media,
               spirituality, and social impact. A woman of substance and style, she proudly represents India
               as the Honorable Style Director of London Fashion Week. Beyond fashion, she is a renowned
               numerologist who empowers individuals through the art of Numeroscope.
             </p>
 
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-sm sm:text-base mb-6">
+            <ul className="list-disc list-inside text-white space-y-2 text-sm sm:text-base mb-6">
               <li>Shubbh Media Entertainment – Producing culturally rich and inspiring media content.</li>
               <li>Shubbh Media Premiere Cricket League – Celebrating sportsmanship and creativity.</li>
               <li>Shubbh Astha Foundation – Promoting autism awareness and inclusive fine arts programs.</li>
               <li>Atmavani TV Channel – A devotional platform spreading positivity and wisdom worldwide.</li>
             </ul>
 
-            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+            <p className="text-white text-sm sm:text-base leading-relaxed">
               Driven by boundless creativity and unwavering dedication, Shubbh Malhotra inspires audiences
               globally through innovation, empowerment, and cultural enrichment.
             </p>

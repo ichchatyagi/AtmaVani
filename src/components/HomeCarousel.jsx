@@ -42,7 +42,7 @@ export default function CircularDemo() {
                     <img
                         src={item.image}
                         alt="carousel"
-                        className="w-full h-52 sm:h-64 md:h-72 object-cover"
+                        className="w-full object-cover"
                     />
                 </div>
             </div>
@@ -50,10 +50,8 @@ export default function CircularDemo() {
     };
 
     return (
-        <div className="w-full bg-white py-6 px-3 md:px-10">
-            <h2 className="text-center text-2xl md:text-3xl font-semibold mb-5 text-gray-800">
-                Our Highlights
-            </h2>
+        <div>
+           
             <Carousel
                 value={images}
                 numVisible={3}

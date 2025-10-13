@@ -62,9 +62,7 @@ const FPC = () => {
 
       {/* Page Container */}
       <div className="bg-base-200 py-10 px-4 sm:px-6 lg:px-10">
-        <h1 className="text-center text-3xl sm:text-4xl font-bold mb-10 text-primary">
-          Program Schedule (FPC)
-        </h1>
+       
 
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">

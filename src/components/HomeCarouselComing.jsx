@@ -53,11 +53,11 @@ export default function HomeCarouselComing() {
     const productTemplate = (item) => {
         return (
             <div className="flex justify-center">
-                <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[90%] overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div className="mx-4 object-cover w-full sm:w-full md:w-full lg:w-full overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={item.image}
                         alt="coming soon"
-                        className="w-full h-52 sm:h-64 md:h-72 lg:h-80 object-cover"
+                        className="w-full object-cover"
                     />
                 </div>
             </div>
@@ -65,10 +65,7 @@ export default function HomeCarouselComing() {
     };
 
     return (
-        <div className="w-full bg-white py-8 px-3 md:px-10">
-            <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6 text-gray-800">
-                Coming Soon
-            </h2>
+        <div>
 
             <Carousel
                 value={images}
