@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import HomeCarousel from '../components/HomeCarousel'
 import HomeCarouselComing from '../components/HomeCarouselComing'
-import BGImg from '../assets/BGImg.png'
+import BGImg from '../assets/homebanner.jpg'
 import Logo from '../assets/Logo.png'
 import { TypingAnimation } from "../components/ui/typing-animation";
 import JioTV from '../assets/JioTV.jpg'
@@ -19,19 +19,8 @@ const Home = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <div
-        className="hero min-h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url(${BGImg})` }}
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center text-center lg:text-left text-error px-6 sm:px-10 lg:px-16 py-12">
-          <div>
-            <div className="text-3xl sm:text-4xl lg:text-5xl font-bold space-y-3">
-              <TypingAnimation>ATMAVANI TV</TypingAnimation>
-              <TypingAnimation>    Welcome To The World Of</TypingAnimation>
-              <TypingAnimation>      4K / HD / SD Devotional TV Channel</TypingAnimation>
-            </div>
-          </div>
-        </div>
+      <div className="object-cover w-full overflow-hidden">
+        <img src={BGImg} className='w-full' alt="mg" />
       </div>
 
       {/* OUR PROGRAMS */}
