@@ -68,15 +68,15 @@ const Contact = () => {
             <div className="card bg-base-300 w-96 shadow-sm">
               <div className="flex flex-col text-center align-middle py-8 items-center justify-center">
                 <IoLocationSharp className='mb-4 text-primary text-lg' size={44} />
-                <p className='mb-4 text-gray-300 text-lg'>05 Aster Building No.5 Andheri Link Road, Oshiwara, Jogeshwari West</p>
+                <p className='mb-4 text-gray-300 text-lg'>105 Aster Build No 5., Andheri Link Road, Oshiwara, Jogeshwari West, Mumbai 400102.</p>
               </div>
             </div>
             <div className="card bg-base-300 w-96 shadow-sm">
               <div className="flex flex-col text-center align-middle py-8 items-center justify-center">
                 <FaPhoneAlt className='mb-4 text-primary text-lg' size={44} />
-                <p className='mb-4 text-gray-300 text-lg'>9152195955</p>
-                <p className='mb-4 text-gray-300 text-lg'>8279700071</p>
-                <p className='mb-4 text-gray-300 text-lg'>9017911114</p>
+                <p className='mb-4 text-gray-300 text-lg'>+91-9152195955</p>
+                <p className='mb-4 text-gray-300 text-lg'>+91-8279700071</p>
+                <p className='mb-4 text-gray-300 text-lg'>+91-9017911114</p>
               </div>
             </div>
             <div className="card bg-base-300 w-96 shadow-sm">

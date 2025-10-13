@@ -9,7 +9,7 @@ const Footer = () => {
       <nav class="grid grid-flow-col gap-4">
         <Link to='/about' class="link link-hover">About</Link>
         <Link to='/contact' class="link link-hover">Contact</Link>
-        <Link to='/fpc' class="link link-hover">FPC</Link>
+        <Link to='/fpc' class="link link-hover">TV Guide</Link>
       </nav>
       <nav>
         <div class="grid grid-flow-col gap-4">
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved by AtmaVani TV</p>
+        <p>Copyright © {new Date().getFullYear()} - All right reserved by AtmaVani TV | Designed By <a href="https://nexstarlive.com/">Nexstar</a></p>
       </aside>
   </footer>
   )
