@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { FaInstagram, FaYoutube, FaPhoneAlt } from "react-icons/fa6"
+import { FaPhoneAlt } from "react-icons/fa"; 
+import { FaInstagram, FaYoutube } from "react-icons/fa6";
 import { BsBrowserChrome } from "react-icons/bs"
 import { IoLocationSharp } from "react-icons/io5"
 import { MdEmail } from "react-icons/md"
