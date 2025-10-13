@@ -1,138 +1,130 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import About1 from '../assets/About1.png'
-import About2 from '../assets/About2.png'
-import AboutHero from '../assets/AboutHero.png'
-import Founder from '../assets/Founder.jpg'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import About1 from '../assets/About1.png';
+import About2 from '../assets/About2.png';
+import AboutHero from '../assets/AboutHero.png';
+import Founder from '../assets/Founder.jpg';
 
 const About = () => {
-
   const missionStatement = `AtmaNamaste
 Our mission is to bring back the spirit of Hindu devotion for all ages—from Gen Z to seniors
 over 60. We create meaningful and inspiring content that helps people feel closer to their
 roots, understand the wisdom of Sanatan Dharma, and live with more peace and purpose.
 Through stories, prayers, and teachings, we aim to awaken the soul and make spirituality part
 of everyday life.
-We are commitied to bringing families closer to faith and spirituality, nurturing a sense of
+We are committed to bringing families closer to faith and spirituality, nurturing a sense of
 unity and shared values across generations.`;
-  const visionStatement = `Our channel aspires to become the paramount devotional retreat for all ages, oﬀering a
+
+  const visionStatement = `Our channel aspires to become the paramount devotional retreat for all ages, offering a
 sacred space where faith meets culture and tradition meets innovation. Our dream is to
 create a peaceful and inspiring space where families come together to explore faith, learn
 spiritual values, and feel connected to Hindu traditions. By blending old wisdom with new
 ways of storytelling, we aim to become the most trusted devotional retreat for every
 generation—from curious youth to devoted elders. By nurturing spiritual values,
 strengthening family bonds, and celebrating Sanatan Dharma, we aim to be the guiding light
-for millions—uniting generations in devotion, discovery, and divine experience.
-Our vision is to become the paramount retreat for all ages—a trusted companion
-on your spiritual journey. Whether you're seeking peace, clarity, or a deeper connection to
-your roots, Atmavani TV is here to guide, uplift , and unite.
-Bringing families closer to faith and spirituality.`;
+for millions—uniting generations in devotion, discovery, and divine experience.`;
 
   return (
     <>
-      <Navbar/>
-      <div>
-        <div
-          className="hero min-h-screen"
-          style={{ backgroundImage: `url(${AboutHero})` }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-md bg-base-100/40 backdrop-blur-lg p-8 rounded-lg">
-              <h1 className="mb-5 text-5xl font-bold">About Us</h1>
-              <p className="mb-5">Welcome to Atmavani TV—India’s leading devotional and spiritual socio-cultural channel. Our
-                mission is to revive Hindu spirituality across generations, from Gen Z to seniors over 60, by
-                creating content that’s meaningful, inspiring, and rooted in Sanatan Dharma.
-                We oﬀer a sacred space where families come together to explore faith, learn spiritual values,
-                and reconnect with their cultural heritage. Through stories, prayers, teachings, and cultural
-                programs, we blend ancient wisdom with modern storytelling to make spirituality part of
-                everyday life.
-              </p>
-            </div>
+      <Navbar />
+
+      {/* Hero Section */}
+      <section
+        className="hero min-h-[70vh] bg-cover bg-center flex items-center justify-center text-center px-4"
+        style={{ backgroundImage: `url(${AboutHero})` }}
+      >
+        <div className="hero-overlay bg-black/60 absolute inset-0"></div>
+        <div className="relative z-10 max-w-2xl bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-lg text-white">
+          <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl font-bold">About Us</h1>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+            Welcome to <strong>Atmavani TV</strong> — India’s leading devotional and spiritual
+            socio-cultural channel. Our mission is to revive Hindu spirituality across generations,
+            from Gen Z to seniors over 60, by creating content that’s meaningful, inspiring, and rooted
+            in <strong>Sanatan Dharma</strong>. We offer a sacred space where families come together to
+            explore faith, learn spiritual values, and reconnect with their cultural heritage.
+          </p>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="bg-base-200 py-10 px-4 sm:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
+          <img
+            src={About1}
+            alt="Our Mission"
+            className="w-full sm:w-2/3 lg:w-1/2 rounded-lg shadow-2xl object-cover"
+          />
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Our Mission</h2>
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+              {missionStatement}
+            </p>
+            <button className="btn btn-primary">Get in Touch</button>
           </div>
         </div>
-      </div>
-      <div>
-        <div className="hero bg-base-200">
-          <div className="hero-content flex-col lg:flex-row">
-            <img
-              src={About1}
-              className="max-w-sm rounded-lg shadow-2xl"
-            />
-            <div>
-              <h1 className="text-4xl font-bold">Our Mission</h1>
-              <p className="py-6">
-                {missionStatement}
-              </p>
-              <button className="btn btn-primary">Get in Touch</button>
-            </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="bg-base-200 py-10 px-4 sm:px-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Our Vision</h2>
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+              {visionStatement}
+            </p>
+            <button className="btn btn-primary">Get in Touch</button>
           </div>
+          <img
+            src={About2}
+            alt="Our Vision"
+            className="w-full sm:w-2/3 lg:w-1/2 rounded-lg shadow-2xl object-cover"
+          />
         </div>
-        <div className="hero bg-base-200">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <img
-              src={About2}
-              className="max-w-sm rounded-lg shadow-2xl"
-            />
-            <div>
-              <h1 className="text-4xl font-bold">Our Vision</h1>
-              <p className="py-6">
-                {visionStatement}
-              </p>
-              <button className="btn btn-primary">Get in Touch</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="grid grid-cols-2 bg-base-200">
-          <div className="text-left p-8">
-            <h2 className='text-4xl font-bold text-left my-8'>About Our Founder</h2>
-            <p className='font-bold text-xl'>Shubbh Malhotra</p>
-            <p className="py-6">
-              Founder & CEO, Shubbh Media Group
+      </section>
+
+      {/* Founder Section */}
+      <section className="bg-base-200 py-12 px-4 sm:px-10">
+        <div className="flex flex-col lg:flex-row items-center gap-10">
+          {/* Founder Text */}
+          <div className="lg:w-1/2">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">About Our Founder</h2>
+            <p className="font-semibold text-lg text-gray-700">Shubbh Malhotra</p>
+            <p className="italic text-gray-600 mb-4">Founder & CEO, Shubbh Media Group</p>
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
               Shubbh Malhotra is a visionary leader whose multifaceted journey spans fashion, media,
               spirituality, and social impact. A woman of substance and style, she proudly represents India
-              as the Honorable Style Director of London Fashion Week, where she has been honored with
-              prestigious awards and has graced numerous high-profile international events. Her influence
-              extends beyond fashion into the realm of numerology, where she guides individuals toward
-              empowered futures through the transformative power of Numeroscope .
-              As the Founder and CEO of multiple pioneering ventures, Shubbh continues to redefine
-              excellence across industries:
-              </p>
-              <ul className="list-disc list-inside">
-                <li>
-                  Shubbh Media Entertainment – A dynamic content powerhouse producing captivating
-                and culturally resonant media.
-                </li>
-                <li>
-                  Shubbh Media Premiere Cricket League – A unique initiative blending sports and
-                entertainment to celebrate talent and teamwork.
-                </li>
-                <li>
-                  Shubbh Astha Foundation – A heartfelt mission to uplift aspiring artists and promote
-                autism awareness through inclusive fine arts programs.
-                </li>
-                <li>
-                  Atmavani TV Channel – India’s leading devotional and spiritual socio-cultural platform,
-                spreading positivity, values, and spiritual wisdom across the globe.
-                </li>
-              </ul>
-              <p className="py-6">
-              Driven by boundless creativity and unwavering dedication, Shubbh Malhotra inspires
-              audiences worldwide with her commitment to innovation, empowerment, and cultural
-              enrichment.
+              as the Honorable Style Director of London Fashion Week. Beyond fashion, she is a renowned
+              numerologist who empowers individuals through the art of Numeroscope.
+            </p>
+
+            <ul className="list-disc list-inside text-gray-700 space-y-2 text-sm sm:text-base mb-6">
+              <li>Shubbh Media Entertainment – Producing culturally rich and inspiring media content.</li>
+              <li>Shubbh Media Premiere Cricket League – Celebrating sportsmanship and creativity.</li>
+              <li>Shubbh Astha Foundation – Promoting autism awareness and inclusive fine arts programs.</li>
+              <li>Atmavani TV Channel – A devotional platform spreading positivity and wisdom worldwide.</li>
+            </ul>
+
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              Driven by boundless creativity and unwavering dedication, Shubbh Malhotra inspires audiences
+              globally through innovation, empowerment, and cultural enrichment.
             </p>
           </div>
-          <div className='mx-auto py-20'>
-            <img className='h-full w-[500px] object-cover shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300' src={Founder} alt="Shubh" />
+
+          {/* Founder Image */}
+          <div className="lg:w-1/2 flex justify-center">
+            <img
+              src={Founder}
+              alt="Shubbh Malhotra"
+              className="w-72 sm:w-96 md:w-[400px] lg:w-[450px] rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 object-cover"
+            />
           </div>
         </div>
-      </div>
+      </section>
+
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

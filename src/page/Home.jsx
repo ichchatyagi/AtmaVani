@@ -13,62 +13,71 @@ import TV2 from '../assets/TV2.jpeg'
 import TV3 from '../assets/TV3.jpeg'
 import TV4 from '../assets/TV4.jpeg'
 
-
 const Home = () => {
-
   return (
     <>
-      <Navbar/>
-      <div>
-        <div
-          className="grid grid-cols-2 hero min-h-screen"
-          style={{ backgroundImage: `url(${BGImg})` }}
-        >
-          <div className='text-left text-error flex flex-col justify-center mx-16 my-8'>
-            <div className='text-5xl font-bold'>
+      <Navbar />
+
+      {/* HERO SECTION */}
+      <div
+        className="hero min-h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${BGImg})` }}
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center text-center lg:text-left text-error px-6 sm:px-10 lg:px-16 py-12">
+          <div>
+            <div className="text-3xl sm:text-4xl lg:text-5xl font-bold space-y-3">
               <TypingAnimation>ATMAVANI TV</TypingAnimation>
-            </div>
-            <div className='text-4xl font-bold'>
               <TypingAnimation>Welcome To The World Of</TypingAnimation>
-            </div>
-            <div className='text-4xl font-bold'>
-              <TypingAnimation>4k / HD / SD Devotional Tv Channel</TypingAnimation>
+              <TypingAnimation>4K / HD / SD Devotional TV Channel</TypingAnimation>
             </div>
           </div>
         </div>
       </div>
-      <div className='mx-16 my-8'>
-        <h1 className='text-5xl font-bold text-left my-8'>
+
+      {/* OUR PROGRAMS */}
+      <div className="px-6 sm:px-10 lg:px-16 my-10">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-left mb-8">
           Our Programs
         </h1>
         <HomeCarousel />
       </div>
-      <div className='mx-16 my-8'>
-        <h1 className='text-5xl font-bold text-left my-8'>
+
+      {/* COMING SOON */}
+      <div className="px-6 sm:px-10 lg:px-16 my-10">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-left mb-8">
           Coming Soon...
         </h1>
         <HomeCarouselComing />
       </div>
-      <div className='grid grid-cols-2 x-16 my-8'>
-        <div className='mx-auto'>
-        <h1 className='text-4xl font-bold text-left my-8'>
-          Watch Anytime, Anywhere
-        </h1>
-        <h2 className='text-2xl font-bold text-left my-8'>STREAMING ON</h2>
-        <div className='flex flex-row gap-8 my-8'>
-          <img className='w-32 rounded-3xl' src={TV1} alt="" />
-          <img className='w-32 rounded-3xl' src={TV2} alt="" />
-          <img className='w-32 rounded-3xl' src={TV3} alt="" />
-          <img className='w-32 rounded-3xl' src={TV4} alt="" />
+
+      {/* WATCH ANYTIME SECTION */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-6 sm:px-10 lg:px-16 my-10">
+        <div className="text-center lg:text-left">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6">
+            Watch Anytime, Anywhere
+          </h1>
+
+          <h2 className="text-2xl font-semibold mb-4">STREAMING ON</h2>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-8">
+            <img className="w-28 sm:w-32 rounded-2xl" src={TV1} alt="TV1" />
+            <img className="w-28 sm:w-32 rounded-2xl" src={TV2} alt="TV2" />
+            <img className="w-28 sm:w-32 rounded-2xl" src={TV3} alt="TV3" />
+            <img className="w-28 sm:w-32 rounded-2xl" src={TV4} alt="TV4" />
+          </div>
+
+          <h2 className="text-2xl font-semibold mb-4">COMING SOON ON</h2>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6">
+            <img className="w-28 sm:w-32 rounded-2xl" src={JioTV} alt="JioTV" />
+            <img className="w-28 sm:w-32 rounded-2xl" src={YuppTV} alt="YuppTV" />
+          </div>
         </div>
-        <h2 className='text-2xl font-bold text-left my-8'>COMING SOON ON</h2>
-        <div className='flex flex-row gap-8 my-8'>
-          <img className='w-32 rounded-3xl' src={JioTV} alt="" />
-          <img src={YuppTV} alt="" className='w-32 rounded-3xl'/>
+
+        {/* LOGO IMAGE */}
+        <div className="flex justify-center lg:justify-end">
+          <img src={Logo} alt="Atmavani Logo" className="w-64 sm:w-80 object-contain" />
         </div>
-        </div>
-        <img src={Logo} alt="" />
       </div>
+
       <Footer />
     </>
   )

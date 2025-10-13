@@ -8,7 +8,6 @@ import P4 from '../assets/Program/p4.jpg'
 import P5 from '../assets/Program/p5.jpg'
 
 const FPC = () => {
-
   const programs = [
     {
       id: 1,
@@ -30,7 +29,7 @@ const FPC = () => {
     },
     {
       id: 3,
-      title: "Devotionals Music Video",
+      title: "Devotional Music Video",
       description: "Devotional music videos fill the heart with peace, faith, and divine love.",
       imageUrl: P3,
       schedule: "Sundays at 5:00 PM",
@@ -51,7 +50,7 @@ const FPC = () => {
       title: "Live Kathas",
       description: "Live Kathas fill life with peace, positivity, and divine wisdom.",
       imageUrl: P5,
-      schedule: "Mondays, Wednesdays, Fridays at 6:30 AM",
+      schedule: "Mon, Wed, Fri at 6:30 AM",
       duration: "45 minutes",
       upcomingDates: ["2026-07-01", "2026-07-03", "2026-07-05"]
     }
@@ -59,23 +58,52 @@ const FPC = () => {
 
   return (
     <>
-      <Navbar/>
-      <div className="grid grid-cols-3 gap-4 m-auto p-8 max-w-6xl">
-        {programs.map(program => (
-          <div key={program.id} class="card bg-primary w-full shadow-lg">
-            <figure>
-              <img className='h-52 w-full object-cover rounded-lg' src={program.imageUrl} alt={program.title} />
-            </figure>
-            <div class="card-body text-gray-900">
-              <h2 class="card-title">{program.title}</h2>
-              <p>{program.description}</p>
-              <p><strong>Schedule:</strong> {program.schedule}</p>
-              <p><strong>Duration:</strong> {program.duration}</p>
-              <p><strong>Upcoming Dates:</strong> {program.upcomingDates.map(dates => <ul key={dates}><li>{dates}</li></ul>)}</p>
+      <Navbar />
+
+      {/* Page Container */}
+      <div className="bg-base-200 py-10 px-4 sm:px-6 lg:px-10">
+        <h1 className="text-center text-3xl sm:text-4xl font-bold mb-10 text-primary">
+          Program Schedule (FPC)
+        </h1>
+
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {programs.map(program => (
+            <div key={program.id} className="card bg-white shadow-md hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden">
+              <figure>
+                <img
+                  className="h-56 w-full object-cover"
+                  src={program.imageUrl}
+                  alt={program.title}
+                />
+              </figure>
+
+              <div className="card-body p-5 text-gray-800">
+                <h2 className="card-title text-2xl font-semibold text-primary mb-2">
+                  {program.title}
+                </h2>
+
+                <p className="text-gray-600 mb-3">{program.description}</p>
+                <p className="text-sm mb-1">
+                  <strong>📅 Schedule:</strong> {program.schedule}
+                </p>
+                <p className="text-sm mb-1">
+                  <strong>⏰ Duration:</strong> {program.duration}
+                </p>
+                <p className="text-sm">
+                  <strong>🗓️ Upcoming Dates:</strong>
+                  <ul className="list-disc list-inside mt-1">
+                    {program.upcomingDates.map((date, index) => (
+                      <li key={index}>{date}</li>
+                    ))}
+                  </ul>
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
       <Footer />
     </>
   )
