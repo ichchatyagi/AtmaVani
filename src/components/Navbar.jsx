@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 import Logo from '../assets/Logo.png';
+import ReactPlayer from "react-player";
 
 const Navbar = () => {
+  const [showPlayer, setShowPlayer] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <>
     <nav className="bg-gray-950/40 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -24,7 +27,7 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-yellow-400 transition">About</Link>
             <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
             <Link to="/fpc" className="hover:text-yellow-400 transition">TV Guide</Link>
-            <Link to="/livetv" className="hover:text-yellow-400 transition">Live TV</Link>
+            <button className="hover:text-yellow-400 transition" onClick={() => setShowPlayer(true)}>Live TV</button>
             <a href="https://www.youtube.com/@AtmavaniTV" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition">
               Videos
             </a>
@@ -74,7 +77,28 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
     </nav>
+    {showPlayer && (
+        <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50">
+          <div className="relative w-3/4 h-3/4">
+            <ReactPlayer
+              url="https://freshlive.in/atmavanitv/atmavanitv/index.m3u8"
+              playing
+              controls
+              width="100%"
+              height="100%"
+            />
+            <button
+              onClick={() => setShowPlayer(false)}
+              className="absolute top-2 right-2 text-white text-2xl"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+      </>
   );
 };
 
